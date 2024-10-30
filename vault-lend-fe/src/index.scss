@@ -1,0 +1,14 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: black;
+$vault-boy: url('img/vault-boy.png');
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+.vault-boy-img {
+  width: 320px;
+  height: 470px;
+  background-image: $vault-boy;
+}
