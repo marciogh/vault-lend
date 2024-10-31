@@ -4,7 +4,7 @@ import api from './api.js'
 import cors from 'cors';
 
 const server:Application = express()
-const port:number = 8081
+const port:number = 8080
 const options: cors.CorsOptions = {
   allowedHeaders: [
       'X-ACCESS_TOKEN',
@@ -17,10 +17,10 @@ const options: cors.CorsOptions = {
       'Content-Disposition',
       'Content-Description',
   ],
-  credentials: true,
   methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
   origin: [
-      '*',
+      'http://localhost:8090',
+      'https://marciogh.com/vault-lend',
   ],
   preflightContinue: false,
 };

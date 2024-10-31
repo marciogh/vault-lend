@@ -33,7 +33,7 @@ function LoanProposals() {
 }
 
 export async function loader() {
-    return fetch('http://localhost:8081/v1/loanProposals')
+    return fetch('http://localhost:8080/v1/loanProposals')
         .then(response => response.json())
 }
 

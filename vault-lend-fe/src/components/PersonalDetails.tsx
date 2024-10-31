@@ -9,6 +9,7 @@ function PersonalDetails() {
         <div>
             <h1>Personal Details</h1>
             <Form method="post" action="/personalDetails">
+                <button>Next</button>
                 <p>
                     <span>First Name</span>
                         <input
@@ -27,7 +28,6 @@ function PersonalDetails() {
                             defaultValue={customer?.firstName}
                         />
                 </p>
-                <button>Next</button>
             </Form>
         </div>
     )

@@ -1,4 +1,5 @@
 import { Form, ActionFunctionArgs, redirect, Link } from "react-router-dom";
+import ReactSlider from 'react-slider'
 
 function LoanDetails() {
 
@@ -6,6 +7,8 @@ function LoanDetails() {
         <div>
             <h1>Loan Details</h1>
             <Form method="post" action="/loanDetails">
+                <Link to="/personalDetails"><button>Previous</button></Link>
+                <button>Apply</button>
                 <p>
                     <span>Loan Amount</span>
                         <input
@@ -14,9 +17,8 @@ function LoanDetails() {
                             name="loanAmount"
                         />
                 </p>
-                <button>Submit</button>
             </Form>
-            <Link to="/personalDetails">Previous</Link>
+            
         </div>
     )
 }
