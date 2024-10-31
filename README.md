@@ -13,5 +13,5 @@ Please see individual repositories for detailed information.
 
 - docker-compose
 - docker
-- node
+- node v23.1.0
 - npm
