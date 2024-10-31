@@ -1,7 +1,0 @@
-services:
-  vault-lend-fe:
-    build: .
-    ports:
-      - "8090:80"
-  vault-lend-be:
-    image: "valt-lend-be:snapshot"

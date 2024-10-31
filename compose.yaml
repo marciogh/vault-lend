@@ -1,0 +1,13 @@
+services:
+  fe:
+    build:
+      context: ./vault-lend-fe
+      dockerfile: Dockerfile
+    ports:
+      - 8090:80
+  be:
+    build:
+      context: ./vault-lend-be
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
