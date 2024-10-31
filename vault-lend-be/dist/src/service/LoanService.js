@@ -3,8 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 function LoanService() {
 }
 function getLoanProposals(person, loanApplication) {
-    console.log(person);
-    console.log(loanApplication);
     return [
         {
             lender: "CommBank",

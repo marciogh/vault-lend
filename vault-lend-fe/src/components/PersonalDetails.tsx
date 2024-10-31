@@ -34,9 +34,9 @@ function PersonalDetails() {
 }
 
 export async function action({ request }:ActionFunctionArgs) {
-    const formData = await request.formData()
-    console.log(Object.fromEntries(formData))
-    return redirect("/loanDetails");
+    //const formData =
+    await request.formData()
+    return redirect("/loanDetails")
 }
 
-export default Object.assign(PersonalDetails);
+export default Object.assign(PersonalDetails)

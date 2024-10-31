@@ -26,6 +26,7 @@ router.get('/loanProposals', (req, res) => {
         amount: 5000,
         deposit: 500,
     };
+    console.log(`got a ${loanApplication.amount} loan request from ${person.firstName}`);
     res.json(LoanService_1.default.getLoanProposals(person, loanApplication));
 });
 exports.default = router;

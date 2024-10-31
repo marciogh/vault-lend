@@ -1,12 +1,6 @@
-import { Form, ActionFunctionArgs, redirect, Link, useLoaderData } from "react-router-dom";
-import { Customer } from "../model/Customer"
-
-var customer: Customer
+import { Form, ActionFunctionArgs, redirect, Link } from "react-router-dom";
 
 function LoanDetails() {
-
-    const data = useLoaderData();
-    console.log("----" + data);
 
     return (
         <div>
@@ -18,7 +12,6 @@ function LoanDetails() {
                             placeholder="Loan Amount"
                             type="text"
                             name="loanAmount"
-                            defaultValue={customer?.firstName}
                         />
                 </p>
                 <button>Submit</button>
@@ -30,8 +23,7 @@ function LoanDetails() {
 
 export async function action({ request }:ActionFunctionArgs) {
     const formData = await request.formData()
-    console.log(Object.fromEntries(formData))
-    return redirect("/");
+    return redirect("/loanProposals");
 }
 
 export default Object.assign(LoanDetails);

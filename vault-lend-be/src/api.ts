@@ -5,7 +5,6 @@ import LoanApplication, { LoanPurpose } from './model/LoanApplication';
 
 const router:Router = express.Router();
 
-
 router.get(
     '/loanProposals', (req: Request, res: Response) => {
         var person:Person = {
@@ -25,6 +24,7 @@ router.get(
             amount: 5000,
             deposit: 500,
         }
+        console.log(`got a ${loanApplication.amount} loan request from ${person.firstName}`);
         res.json(LoanService.getLoanProposals(person, loanApplication))
     }
 )
