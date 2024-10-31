@@ -27,7 +27,7 @@ function PersonalDetails() {
                             defaultValue={customer?.firstName}
                         />
                 </p>
-                <button>Submit</button>
+                <button>Next</button>
             </Form>
         </div>
     )

@@ -1,7 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Start() {
     return (
-        <Link to="/personalDetails">Start application</Link>
+        <div>
+            <Link to="/personalDetails">Start application</Link>
+            <Outlet />
+        </div>
     )
 }
+

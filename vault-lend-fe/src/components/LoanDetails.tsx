@@ -1,9 +1,12 @@
-import { Form, ActionFunctionArgs, redirect } from "react-router-dom";
+import { Form, ActionFunctionArgs, redirect, Link, useLoaderData } from "react-router-dom";
 import { Customer } from "../model/Customer"
 
 var customer: Customer
 
 function LoanDetails() {
+
+    const data = useLoaderData();
+    console.log("----" + data);
 
     return (
         <div>
@@ -20,6 +23,7 @@ function LoanDetails() {
                 </p>
                 <button>Submit</button>
             </Form>
+            <Link to="/personalDetails">Previous</Link>
         </div>
     )
 }

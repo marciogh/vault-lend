@@ -1,0 +1,23 @@
+{
+  "name": "vault-lend-be",
+  "version": "1.0.0",
+  "description": "Vault Lend Backend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/src/server\"",
+    "test": "jest",
+    "start": "npx tsc && node dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "nodemon": "^3.1.7",
+    "ts-express": "^1.0.3",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
