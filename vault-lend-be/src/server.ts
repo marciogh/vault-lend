@@ -20,7 +20,8 @@ const options: cors.CorsOptions = {
   methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
   origin: [
       'http://localhost:8090',
-      'https://marciogh.com/vault-lend',
+      'http://localhost:80',
+      'http://vault-lend.marciogh.com',
   ],
   preflightContinue: false,
 };
